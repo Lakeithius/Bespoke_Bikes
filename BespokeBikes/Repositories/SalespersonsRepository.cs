@@ -25,6 +25,6 @@ public abstract class SalespersonsRepository
             .RuleFor(x => x.StartDate, f => f.Date.Between(DateTime.Now.AddYears(-50), DateTime.Now));
            // .RuleFor(x => x.TerminationDate, null);
 
-        return faker.Generate(10000);
+        return faker.Generate(1000);
     }
 }

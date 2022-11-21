@@ -22,7 +22,7 @@ namespace BespokenBikes.Repositories
                 .RuleFor(x => x.CustomerId, Guid.NewGuid())
                 .RuleFor(x => x.SaleDate, f => f.Date.Between(DateTime.Now.AddYears(-50), DateTime.Now));
 
-            return faker.Generate(10000);
+            return faker.Generate(1000);
         }
 
         public static IEnumerable<SaleViewModel> GetAllDemoVM()
